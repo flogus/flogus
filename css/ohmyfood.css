@@ -1,0 +1,477 @@
+header {
+  background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+header a {
+  height: 30px;
+  width: 30px;
+  display: block;
+}
+
+header img {
+  height: 35px;
+}
+
+footer {
+  background-color: #3b3b3b;
+  border: 1px solid;
+  padding: 30px;
+}
+
+footer div {
+  padding-bottom: 20px;
+}
+
+footer div path {
+  fill: #ffffff;
+}
+
+footer ul li a {
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+footer ul li a i {
+  width: 28px;
+}
+
+@media screen and (min-width: 1024px) {
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.bg-image {
+  background-image: url("../images/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-size: cover;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.bg-image h1 {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-style: italic;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Shrikhand;
+  margin: 0;
+  padding: 40px 45px 0 20px;
+}
+
+.block-plat {
+  padding: 0;
+  margin: 0;
+}
+
+.block-plat h2 {
+  margin: 15px 0;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  -o-border-image: linear-gradient(90deg, #99E2D0 40px, transparent 40px) 1;
+     border-image: linear-gradient(90deg, #99E2D0 40px, transparent 40px) 1;
+}
+
+.block-plat ul li {
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 3px 3px 5px 0px #dddddd;
+          box-shadow: 3px 3px 5px 0px #dddddd;
+}
+
+.block-plat ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-plat ul li a div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.block-plat ul li a div:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.block-plat ul li a div:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50px;
+          flex: 0 1 50px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.commander {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
+}
+
+button {
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 40px;
+  padding: 20px 30px;
+  border: none;
+  -webkit-box-shadow: 3px 3px 5px 0px #ebebeb;
+          box-shadow: 3px 3px 5px 0px #ebebeb;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom, #FF79DA -30%, #9356DC 100%);
+  background-color: #9356DC;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bg-a-la-francaise {
+  background-image: url("../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.bg-le-delice-des-sens {
+  background-image: url("../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.bg-la-note-enchantee {
+  background-image: url("../images/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.bg-la-palette-du-gout {
+  background-image: url("../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.bg-image-center-center {
+  background-position: center center;
+  background-size: cover;
+}
+
+.block-lieux {
+  padding: 20px 0;
+  background-color: #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-lieux i {
+  padding-right: 10px;
+}
+
+.block-lieux span {
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.block-fonctionnement {
+  background-color: #ffffff;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.block-fonctionnement ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  width: 100%;
+}
+
+.block-fonctionnement ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin: 0 10px 20px 10px;
+  padding: 30px;
+  -webkit-box-shadow: 3px 3px 5px 0px #dddddd;
+          box-shadow: 3px 3px 5px 0px #dddddd;
+  background-color: #ebebeb;
+  font-weight: 700;
+  font-size: 18px;
+  position: relative;
+}
+
+.block-fonctionnement ul li a span {
+  border-radius: 70px;
+  width: 25px;
+  height: 25px;
+  background-color: #9356DC;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: -12px;
+}
+
+.block-fonctionnement ul li a i {
+  margin: 0 20px 0 5px;
+}
+
+.block-fonctionnement ul li a:hover {
+  background-color: #f2eafb;
+}
+
+.block-fonctionnement ul li a:hover i {
+  color: #9356DC;
+}
+
+@media screen and (min-width: 768px) {
+  .block-fonctionnement ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.block-restaurants {
+  background-color: #ebebeb;
+}
+
+.block-restaurants ul li {
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 3px 3px 5px 0px #dddddd;
+          box-shadow: 3px 3px 5px 0px #dddddd;
+  padding: 0;
+}
+
+.block-restaurants ul li a {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.block-restaurants ul li a div.empty {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.block-restaurants ul li a div.information {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 70px;
+          flex: 0 1 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  padding: 0 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.block-restaurants ul li a div.information div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.block-restaurants ul li a div.information div span:first-child {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .block-restaurants ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .block-restaurants ul li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+}
+
+.block-reserver {
+  background-color: #ebebeb;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.block-reserver h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 40px 40px 10px 40px;
+}
+
+.block-reserver h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 10px 40px 30px 40px;
+}
+
+body {
+  margin: 0;
+  background-color: #ebebeb;
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  padding: 0;
+}
+
+.global-padding {
+  padding: 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+/*# sourceMappingURL=ohmyfood.css.map */
