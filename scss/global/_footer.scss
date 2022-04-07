@@ -1,0 +1,29 @@
+footer {
+    background-color: rgb(59, 59, 59);
+    border: 1px solid;
+    padding: 30px;
+    div {
+        padding-bottom: 20px;
+        path {
+            fill: #ffffff;
+        }
+    }
+    ul {
+        li {
+            a {
+                color: #ffffff;
+                line-height: 1.8;
+                i {
+                    width: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

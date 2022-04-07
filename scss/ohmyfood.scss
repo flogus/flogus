@@ -1,0 +1,36 @@
+@import "vars-mixins/_vars.scss";
+@import "vars-mixins/_mixins.scss";
+@import "global/_header.scss";
+@import "global/_footer.scss";
+@import "_02-titre.scss";
+@import "_03-block-plat.scss";
+@import "_04-button.scss";
+@import "_bg-images.scss";
+@import "accueil/_block-lieux.scss";
+@import "accueil/_block-fonctionnement.scss";
+@import "accueil/_block-restaurants.scss";
+@import "accueil/_block-reserver.scss";
+body {
+    margin: 0;
+    background-color: $light-grey;
+    font-family: "Raleway", sans-serif;
+}
+
+main {
+    padding: 0;
+}
+
+.global-padding {
+    padding: 20px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
