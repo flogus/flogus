@@ -214,6 +214,257 @@ button {
   background-size: cover;
 }
 
+#loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(245, 245, 245, 0.95);
+  position: fixed;
+  z-index: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#loader div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+#loader div i {
+  font-size: 4rem;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: absolute;
+  bottom: 30px;
+  /*text-shadow: 3px 6px $shadow-color;*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#loader div i.fa-bowl-food {
+  -webkit-animation-name: fa-bowl-food;
+          animation-name: fa-bowl-food;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom, #FF79DA -30%, #9356DC 100%);
+}
+
+#loader div i.fa-burger {
+  -webkit-animation-name: fa-burger;
+          animation-name: fa-burger;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #99E2D0), to(#FF79DA));
+  background-image: linear-gradient(to bottom, #99E2D0 -30%, #FF79DA 100%);
+}
+
+#loader div i.fa-carrot {
+  -webkit-animation-name: fa-carrot;
+          animation-name: fa-carrot;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #9356DC), to(#99E2D0));
+  background-image: linear-gradient(to bottom, #9356DC -30%, #99E2D0 100%);
+}
+
+#loader span {
+  font-size: 18px;
+  color: #9356DC;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: loadingtext;
+          animation-name: loadingtext;
+}
+
+@-webkit-keyframes loadingtext {
+  16% {
+    color: #9356DC;
+  }
+  50% {
+    color: #FF79DA;
+  }
+  83% {
+    color: #99E2D0;
+  }
+}
+
+@keyframes loadingtext {
+  16% {
+    color: #9356DC;
+  }
+  50% {
+    color: #FF79DA;
+  }
+  83% {
+    color: #99E2D0;
+  }
+}
+
+@-webkit-keyframes fa-bowl-food {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  16% {
+    opacity: 100;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  33% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fa-bowl-food {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  16% {
+    opacity: 100;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  33% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fa-burger {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  33% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 100;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  66% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fa-burger {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  33% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 100;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  66% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fa-carrot {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  66% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  83% {
+    opacity: 100;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fa-carrot {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  66% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  83% {
+    opacity: 100;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .block-lieux {
   padding: 20px 0;
   background-color: #dddddd;
@@ -285,6 +536,8 @@ button {
   font-weight: 700;
   font-size: 18px;
   position: relative;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 
 .block-fonctionnement ul li a span {
@@ -313,6 +566,8 @@ button {
 }
 
 .block-fonctionnement ul li a:hover {
+  -webkit-box-shadow: 3px 3px 5px 0px #b5b5b5;
+          box-shadow: 3px 3px 5px 0px #b5b5b5;
   background-color: #f2eafb;
 }
 
