@@ -1,3 +1,14 @@
+.nouveau {
+    background: $tertiary;
+    font-size: 14px;
+    font-weight: 600;
+    color: darken($tertiary, 40%);
+    padding: 8px 12px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
 div.commander {
     display: flex;
     justify-content: center;

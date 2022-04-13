@@ -12,6 +12,9 @@
                 div {
                     &.empty {
                         flex-grow: 1;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-start;
                     }
                     &.information {
                         flex: 0 1 70px;
