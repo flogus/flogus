@@ -222,7 +222,9 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  top: -100px;
+  opacity: 0;
+  height: 0vh;
   width: 100vw;
   background-color: rgba(245, 245, 245, 0.95);
   position: fixed;
@@ -233,6 +235,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-name: loader-visibility;
+          animation-name: loader-visibility;
 }
 
 #loader div {
@@ -252,11 +260,10 @@ button {
   font-size: 4rem;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
   position: absolute;
   bottom: 30px;
-  /*text-shadow: 3px 6px $shadow-color;*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -287,13 +294,49 @@ button {
   color: #9356DC;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: loadingtext;
-          animation-name: loadingtext;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-name: loading-text;
+          animation-name: loading-text;
 }
 
-@-webkit-keyframes loadingtext {
+@-webkit-keyframes loader-visibility {
+  0% {
+    top: 0;
+    height: 100vh;
+    opacity: 1;
+  }
+  90% {
+    top: 0;
+    height: 100vh;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes loader-visibility {
+  0% {
+    top: 0;
+    height: 100vh;
+    opacity: 1;
+  }
+  90% {
+    top: 0;
+    height: 100vh;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes loading-text {
   16% {
     color: #9356DC;
   }
@@ -305,7 +348,7 @@ button {
   }
 }
 
-@keyframes loadingtext {
+@keyframes loading-text {
   16% {
     color: #9356DC;
   }
