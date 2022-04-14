@@ -33,8 +33,10 @@
                         flex: 0 1 80%;
                         font-size: 16px;
                         font-weight: 300;
+                        overflow: hidden;
                         span {
                             width: 100%;
+                            min-width: 0;
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
@@ -85,5 +87,13 @@ a:hover .menu-check-ligne {
 @keyframes spin {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .block-plat {
+        ul li a div.container {
+            padding-right: 5px;
+        }
     }
 }
