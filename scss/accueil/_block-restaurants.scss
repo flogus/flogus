@@ -4,6 +4,7 @@
         li {
             @include block-shadow-and-border;
             padding: 0;
+            background-size: cover;
             a {
                 height: 300px;
                 display: flex;
@@ -19,6 +20,7 @@
                     &.information {
                         flex: 0 1 70px;
                         display: flex;
+                        justify-content: space-between;
                         align-items: center;
                         background-color: #ffffff;
                         padding: 0 20px;
@@ -27,7 +29,7 @@
                         div {
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex-grow: 0;
                             span {
                                 &:first-child {
                                     font-weight: 700;

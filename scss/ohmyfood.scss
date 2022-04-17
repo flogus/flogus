@@ -1,12 +1,13 @@
 @import "vars-mixins/_vars.scss";
 @import "vars-mixins/_mixins.scss";
-@import "global/_header.scss";
-@import "global/_footer.scss";
 @import "global/_buttons.scss";
-@import "global/_effects.scss";
-@import "_02-titre.scss";
+@import "global/_effect-coeur.scss";
+@import "global/_effect-fadein.scss";
+@import "global/_footer.scss";
+@import "global/_header.scss";
+@import "menus/_bg-images.scss";
 @import "menus/_block-plat.scss";
-@import "_bg-images.scss";
+@import "menus/_titres.scss";
 @import "accueil/_loading.scss";
 @import "accueil/_block-lieux.scss";
 @import "accueil/_block-fonctionnement.scss";
@@ -20,6 +21,7 @@ body {
 
 main {
     padding: 0;
+
 }
 
 .global-padding {
@@ -30,6 +32,8 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
 a {

@@ -28,4 +28,9 @@ button {
     background: linear-gradient(to bottom, $secondary -30%, $primary 100%);
     background-color: $primary;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+	transition: background-color 400ms;
+
+    &:hover{
+        background: linear-gradient(to bottom, $secondary -10%, $primary 100%);
+    }
 }

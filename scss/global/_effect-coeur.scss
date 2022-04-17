@@ -1,0 +1,31 @@
+div.coeur-container{
+    position: relative;
+    right: 20px;
+    bottom: 10px;
+    &:hover .coeur-color{
+        opacity: 1;
+    }
+    .coeurs{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 24px;
+        width: 24px;
+        line-height: 1;
+    }
+    .coeur-color{
+        z-index: 1;
+        font-weight: bold;
+        background: -webkit-linear-gradient($primary, $secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 2s;
+        opacity: 0;
+    }
+    .coeur-contour{
+        z-index: 2;
+    }
+}
+

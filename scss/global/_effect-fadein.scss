@@ -1,6 +1,7 @@
 .fade-in {
-    animation: menu-effect 1s cubic-bezier(.19, .35, .2, .99);
+    animation: menu-effect 1s cubic-bezier(.19, .35, .2, .99) forwards;
     position: relative;
+    opacity: 0;
 }
 
 .fade-in--delay-1 {
@@ -18,7 +19,7 @@
 @keyframes menu-effect {
     0% {
         opacity: 0;
-        top: 50px;
+        top: 35px;
     }
     100% {
         opacity: 1;
