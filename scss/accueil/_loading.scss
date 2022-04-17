@@ -12,7 +12,7 @@
     align-items: center;
     animation-duration: 3s;
     animation-iteration-count: 1;
-    animation-name: loader-visibility2;
+    animation-name: loader-visibility;
     div {
         display: flex;
         justify-content: center;
@@ -49,8 +49,6 @@
     }
 }
 
-@keyframes loader-visibility2 {
-}
 @keyframes loader-visibility {
     0% {
         top: 0;

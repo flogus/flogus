@@ -477,8 +477,8 @@ a:hover .menu-check-ligne i {
           animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-name: loader-visibility2;
-          animation-name: loader-visibility2;
+  -webkit-animation-name: loader-visibility;
+          animation-name: loader-visibility;
 }
 
 #loader div {
@@ -538,9 +538,7 @@ a:hover .menu-check-ligne i {
           animation-name: loading-text;
 }
 
-@-webkit-keyframes loader-visibility2 {}
-
-@keyframes loader-visibility2 {}@-webkit-keyframes loader-visibility {
+@-webkit-keyframes loader-visibility {
   0% {
     top: 0;
     height: 100vh;
@@ -556,7 +554,9 @@ a:hover .menu-check-ligne i {
     height: 0;
     opacity: 0;
   }
-}@keyframes loader-visibility {
+}
+
+@keyframes loader-visibility {
   0% {
     top: 0;
     height: 100vh;
