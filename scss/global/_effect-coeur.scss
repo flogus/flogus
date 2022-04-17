@@ -2,9 +2,17 @@ div.coeur-container{
     position: relative;
     right: 20px;
     bottom: 10px;
-    &:hover .coeur-color{
-        opacity: 1;
-    }
+    &:hover{
+        .coeur-color{
+            animation-fill-mode: forwards;
+            animation-name: fillmyheart;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+        }
+        .coeur-contour{
+            opacity: 0;
+        }
+    } 
     .coeurs{
         position: absolute;
         top: 0;
@@ -18,14 +26,26 @@ div.coeur-container{
     .coeur-color{
         z-index: 1;
         font-weight: bold;
-        background: -webkit-linear-gradient($primary, $secondary);
+        background: -webkit-linear-gradient($primary, $secondary 50%,white 50%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transition: all 2s;
-        opacity: 0;
+        height: 48px;
+        background-position-y:24px;
     }
     .coeur-contour{
         z-index: 2;
     }
 }
+
+@keyframes fillmyheart {
+    0%{   
+        background-position-y:24px;
+        opacity: 1;
+    }
+    100%{
+        background-position-y:0;
+        opacity: 1;
+    }
+}
+
 

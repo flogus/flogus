@@ -53,7 +53,18 @@ div.coeur-container {
 }
 
 div.coeur-container:hover .coeur-color {
-  opacity: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: fillmyheart;
+          animation-name: fillmyheart;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+div.coeur-container:hover .coeur-contour {
+  opacity: 0;
 }
 
 div.coeur-container .coeurs {
@@ -70,16 +81,37 @@ div.coeur-container .coeurs {
 div.coeur-container .coeur-color {
   z-index: 1;
   font-weight: bold;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-linear-gradient(#9356DC, #FF79DA 50%, white 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: all 2s;
-  transition: all 2s;
-  opacity: 0;
+  height: 48px;
+  background-position-y: 24px;
 }
 
 div.coeur-container .coeur-contour {
   z-index: 2;
+}
+
+@-webkit-keyframes fillmyheart {
+  0% {
+    background-position-y: 24px;
+    opacity: 1;
+  }
+  100% {
+    background-position-y: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fillmyheart {
+  0% {
+    background-position-y: 24px;
+    opacity: 1;
+  }
+  100% {
+    background-position-y: 0;
+    opacity: 1;
+  }
 }
 
 .fade-in {
