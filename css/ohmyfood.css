@@ -20,7 +20,7 @@ div.commander {
 }
 
 button {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
@@ -28,10 +28,10 @@ button {
   cursor: pointer;
   color: #ffffff;
   border-radius: 40px;
-  padding: 20px 30px;
+  padding: 15px 23px;
   border: none;
-  -webkit-box-shadow: 3px 3px 5px 0px #ebebeb;
-          box-shadow: 3px 3px 5px 0px #ebebeb;
+  -webkit-box-shadow: 3px 3px 5px 0px #f4f4f4;
+          box-shadow: 3px 3px 5px 0px #f4f4f4;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #FF79DA), to(#9356DC));
   background: linear-gradient(to bottom, #FF79DA -30%, #9356DC 100%);
   background-color: #9356DC;
@@ -52,7 +52,12 @@ div.coeur-container {
   bottom: 10px;
 }
 
-div.coeur-container:hover .coeur-color {
+div.coeur-container:hover {
+  cursor: pointer;
+}
+
+div.coeur-container:hover .coeur-color,
+div.coeur-container:hover .coeur-menus {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-name: fillmyheart;
@@ -74,7 +79,7 @@ div.coeur-container .coeurs {
   left: 0;
   right: 0;
   height: 24px;
-  width: 24px;
+  width: 26px;
   line-height: 1;
 }
 
@@ -88,29 +93,37 @@ div.coeur-container .coeur-color {
   background-position-y: 24px;
 }
 
+div.coeur-container .coeur-menus {
+  z-index: 1;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA 50%, #f4f4f4 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 48px;
+  background-position-y: 24px;
+}
+
 div.coeur-container .coeur-contour {
   z-index: 2;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 @-webkit-keyframes fillmyheart {
   0% {
     background-position-y: 24px;
-    opacity: 1;
   }
   100% {
     background-position-y: 0;
-    opacity: 1;
   }
 }
 
 @keyframes fillmyheart {
   0% {
     background-position-y: 24px;
-    opacity: 1;
   }
   100% {
     background-position-y: 0;
-    opacity: 1;
   }
 }
 
@@ -161,15 +174,20 @@ div.coeur-container .coeur-contour {
 footer {
   background-color: #3b3b3b;
   border: 1px solid;
-  padding: 30px;
+  padding: 20px 30px 30px 30px;
+  font-size: 14px;
 }
 
 footer div {
-  padding-bottom: 20px;
+  padding-bottom: 8px;
 }
 
 footer div path {
   fill: #ffffff;
+}
+
+footer div svg {
+  width: 100px;
 }
 
 footer ul li a {
@@ -193,34 +211,25 @@ footer ul li a i {
 }
 
 header {
-  background-color: #ebebeb;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 0;
+  padding: 0;
   margin-bottom: 10px;
+  height: 73px;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-header.accueil {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 header a,
 header div {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 50px;
-          flex: 0 1 50px;
-  height: 30px;
+      -ms-flex: 0 1 60px;
+          flex: 0 1 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -230,10 +239,23 @@ header div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  top: -4px;
 }
 
 header img {
-  height: 30px;
+  height: 28px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header.accueil {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 63px;
+  margin-bottom: 7px;
 }
 
 .bg-a-la-francaise {
@@ -427,9 +449,7 @@ a:hover .menu-check-ligne i {
   }
   div.commander {
     max-height: 65px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 210px;
-            flex: 1 1 210px;
+    min-width: 300px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -456,7 +476,7 @@ a:hover .menu-check-ligne i {
 .bg-image h1 {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  background-color: #ebebeb;
+  background-color: #f4f4f4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,7 +489,7 @@ a:hover .menu-check-ligne i {
           align-items: center;
   font-family: Shrikhand;
   font-size: 26px;
-  font-weight: 100;
+  font-weight: normal;
   margin: 0;
   padding: 40px 45px 0 20px;
 }
@@ -769,7 +789,7 @@ a:hover .menu-check-ligne i {
 }
 
 .block-lieux {
-  padding: 20px 0;
+  padding: 13px 0;
   background-color: #dddddd;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,8 +807,8 @@ a:hover .menu-check-ligne i {
 }
 
 .block-lieux span {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 500;
   padding-left: 10px;
 }
 
@@ -835,7 +855,7 @@ a:hover .menu-check-ligne i {
   padding: 30px;
   -webkit-box-shadow: 3px 3px 5px 0px #dddddd;
           box-shadow: 3px 3px 5px 0px #dddddd;
-  background-color: #ebebeb;
+  background-color: #f4f4f4;
   font-weight: 700;
   font-size: 18px;
   position: relative;
@@ -893,7 +913,7 @@ a:hover .menu-check-ligne i {
 }
 
 .block-restaurants {
-  background-color: #ebebeb;
+  background-color: #f4f4f4;
 }
 
 .block-restaurants ul li {
@@ -994,7 +1014,7 @@ a:hover .menu-check-ligne i {
 }
 
 .block-reserver {
-  background-color: #ebebeb;
+  background-color: #f4f4f4;
   padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1010,20 +1030,20 @@ a:hover .menu-check-ligne i {
 }
 
 .block-reserver h1 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
   margin: 40px 40px 10px 40px;
 }
 
 .block-reserver h2 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   margin: 10px 40px 30px 40px;
 }
 
 body {
   margin: 0;
-  background-color: #ebebeb;
+  background-color: #f4f4f4;
   font-family: "Raleway", sans-serif;
 }
 

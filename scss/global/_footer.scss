@@ -1,11 +1,15 @@
 footer {
     background-color: rgb(59, 59, 59);
     border: 1px solid;
-    padding: 30px;
+    padding: 20px 30px 30px 30px;
+    font-size: 14px;
     div {
-        padding-bottom: 20px;
+        padding-bottom: 8px;
         path {
             fill: #ffffff;
+        }
+        svg{
+            width: 100px;
         }
     }
     ul {

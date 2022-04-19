@@ -1,51 +1,59 @@
-div.coeur-container{
+div.coeur-container {
     position: relative;
     right: 20px;
     bottom: 10px;
-    &:hover{
-        .coeur-color{
+    &:hover {
+        cursor: pointer;
+        .coeur-color,
+        .coeur-menus {
             animation-fill-mode: forwards;
             animation-name: fillmyheart;
             animation-duration: 0.5s;
             animation-iteration-count: 1;
         }
-        .coeur-contour{
+        .coeur-contour {
             opacity: 0;
         }
-    } 
-    .coeurs{
+    }
+    .coeurs {
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
         height: 24px;
-        width: 24px;
+        width: 26px;
         line-height: 1;
     }
-    .coeur-color{
+    .coeur-color {
         z-index: 1;
         font-weight: bold;
-        background: -webkit-linear-gradient($primary, $secondary 50%,white 50%);
+        background: -webkit-linear-gradient($primary, $secondary 50%, white 50%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         height: 48px;
-        background-position-y:24px;
+        background-position-y: 24px;
     }
-    .coeur-contour{
+    .coeur-menus {
+        z-index: 1;
+        font-weight: bold;
+        background: -webkit-linear-gradient($primary, $secondary 50%, $light-grey 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        height: 48px;
+        background-position-y: 24px;
+    }
+    .coeur-contour {
         z-index: 2;
+        transition: opacity 0.5s;
     }
 }
 
 @keyframes fillmyheart {
-    0%{   
-        background-position-y:24px;
-        opacity: 1;
+    0% {
+        background-position-y: 24px;
     }
-    100%{
-        background-position-y:0;
-        opacity: 1;
+    100% {
+        background-position-y: 0;
     }
 }
-
-
