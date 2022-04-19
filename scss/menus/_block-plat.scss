@@ -83,6 +83,7 @@
 a:hover .menu-check-ligne {
     opacity: 1;
     width: 70px;
+    flex:0 0 70px;
     i {
         animation: spin 0.25s linear;
         animation-delay: 0.25s;
@@ -92,13 +93,5 @@ a:hover .menu-check-ligne {
 @keyframes spin {
     100% {
         transform: rotate(360deg);
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .block-plat {
-        ul li a div.container {
-            padding-right: 5px;
-        }
     }
 }
