@@ -1,0 +1,14 @@
+
+@media screen and (min-width: 768px) {
+    main.menus{
+        display: flex;
+    }
+    div.block-plat {
+        flex: 1 1 auto;
+    }
+    div.commander{
+        max-height: 65px;
+        flex: 1 1 210px;
+        justify-content: center;
+    }
+}

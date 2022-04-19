@@ -414,6 +414,28 @@ a:hover .menu-check-ligne i {
   }
 }
 
+@media screen and (min-width: 768px) {
+  main.menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div.block-plat {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  div.commander {
+    max-height: 65px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 210px;
+            flex: 1 1 210px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .bg-image {
   background-size: cover;
   height: 290px;
@@ -466,7 +488,7 @@ a:hover .menu-check-ligne i {
   width: 100vw;
   background-color: rgba(245, 245, 245, 0.95);
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

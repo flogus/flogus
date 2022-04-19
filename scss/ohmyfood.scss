@@ -7,6 +7,7 @@
 @import "global/_header.scss";
 @import "menus/_bg-images.scss";
 @import "menus/_block-plat.scss";
+@import "menus/_custom-layout-desktop.scss";
 @import "menus/_titres.scss";
 @import "accueil/_loading.scss";
 @import "accueil/_block-lieux.scss";
@@ -21,7 +22,6 @@ body {
 
 main {
     padding: 0;
-
 }
 
 .global-padding {
