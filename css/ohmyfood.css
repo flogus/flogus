@@ -407,9 +407,6 @@ header.accueil {
 a:hover .menu-check-ligne {
   opacity: 1;
   width: 70px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 70px;
-          flex: 0 0 70px;
 }
 
 a:hover .menu-check-ligne i {
