@@ -1,64 +1,64 @@
 .block-fonctionnement {
-    background-color: #ffffff;
-    padding-bottom: 50px;
+  background-color: #ffffff;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  ul {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    ul {
+    justify-items: center;
+    width: 100%;
+    li {
+      a {
         display: flex;
-        flex-direction: column;
-        justify-items: center;
-        width: 100%;
-        li {
-            a {
-                display: flex;
-                align-items: center;
-                flex: 1 1 100%;
-                border-radius: 20px;
-                background-color: #ffffff;
-                margin: 0 10px 20px 10px;
-                padding: 30px;
-                box-shadow: 3px 3px 5px 0px $shadow-color;
-                background-color: $light-grey;
-                font-weight: 700;
-                font-size: 18px;
-                position: relative;
-                transition: all 400ms;
-                span {
-                    border-radius: 70px;
-                    width: 25px;
-                    height: 25px;
-                    background-color: $primary;
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: #ffffff;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: absolute;
-                    left: -12px;
-                }
-                i {
-                    margin: 0 20px 0 5px;
-                }
-                &:hover {
-                    box-shadow: 3px 3px 5px 0px #b5b5b5;
-                    background-color: lighten($primary, 35%);
-                    i {
-                        color: $primary;
-                    }
-                }
-            }
+        align-items: center;
+        flex: 1 1 100%;
+        border-radius: 20px;
+        background-color: #ffffff;
+        margin: 0 10px 20px 10px;
+        padding: 30px;
+        box-shadow: 3px 3px 5px 0px $shadow-color;
+        background-color: $light-grey;
+        font-weight: 700;
+        font-size: 18px;
+        position: relative;
+        transition: all 400ms;
+        span {
+          border-radius: 70px;
+          width: 25px;
+          height: 25px;
+          background-color: $primary;
+          font-size: 14px;
+          font-weight: 500;
+          color: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          left: -12px;
         }
+        i {
+          margin: 0 20px 0 5px;
+        }
+        &:hover {
+          box-shadow: 3px 3px 5px 0px #b5b5b5;
+          background-color: lighten($primary, 35%);
+          i {
+            color: $primary;
+          }
+        }
+      }
     }
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .block-fonctionnement {
-        ul {
-            flex-direction: row;
-            display: flex;
-            justify-content: space-around;
-        }
+  .block-fonctionnement {
+    ul {
+      flex-direction: row;
+      display: flex;
+      justify-content: space-around;
     }
+  }
 }

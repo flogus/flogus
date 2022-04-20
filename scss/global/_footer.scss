@@ -1,33 +1,33 @@
 footer {
-    background-color: rgb(59, 59, 59);
-    border: 1px solid;
-    padding: 20px 30px 30px 30px;
-    font-size: 14px;
-    div {
-        padding-bottom: 8px;
-        path {
-            fill: #ffffff;
-        }
-        svg{
-            width: 100px;
-        }
+  background-color: rgb(59, 59, 59);
+  border: 1px solid;
+  padding: 20px 30px 30px 30px;
+  font-size: 14px;
+  div {
+    padding-bottom: 8px;
+    path {
+      fill: #ffffff;
     }
-    ul {
-        li {
-            a {
-                color: #ffffff;
-                line-height: 1.8;
-                i {
-                    width: 28px;
-                }
-            }
-        }
+    svg {
+      width: 100px;
     }
+  }
+  ul {
+    li {
+      a {
+        color: #ffffff;
+        line-height: 1.8;
+        i {
+          width: 28px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    ul {
-        display: flex;
-        justify-content: space-evenly;
-    }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

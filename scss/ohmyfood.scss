@@ -15,28 +15,28 @@
 @import "accueil/_block-restaurants.scss";
 @import "accueil/_block-reserver.scss";
 body {
-    margin: 0;
-    background-color: $light-grey;
-    font-family: "Raleway", sans-serif;
+  margin: 0;
+  background-color: $light-grey;
+  font-family: "Raleway", sans-serif;
 }
 
 main {
-    padding: 0;
+  padding: 0;
 }
 
 .global-padding {
-    padding: 20px;
+  padding: 20px;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
-    text-decoration: none;
-    color: $text-color;
+  text-decoration: none;
+  color: $text-color;
 }

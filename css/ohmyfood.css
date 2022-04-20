@@ -1,5 +1,5 @@
 .nouveau {
-  background: #99E2D0;
+  background: #99e2d0;
   font-size: 14px;
   font-weight: 600;
   color: #278870;
@@ -32,9 +32,9 @@ button {
   border: none;
   -webkit-box-shadow: 3px 3px 5px 0px #f4f4f4;
           box-shadow: 3px 3px 5px 0px #f4f4f4;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom, #FF79DA -30%, #9356DC 100%);
-  background-color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #ff79da), to(#9356dc));
+  background: linear-gradient(to bottom, #ff79da -30%, #9356dc 100%);
+  background-color: #9356dc;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   -webkit-transition: background-color 400ms;
@@ -42,8 +42,8 @@ button {
 }
 
 button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-10%, #FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom, #FF79DA -10%, #9356DC 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-10%, #ff79da), to(#9356dc));
+  background: linear-gradient(to bottom, #ff79da -10%, #9356dc 100%);
 }
 
 div.coeur-container {
@@ -86,7 +86,7 @@ div.coeur-container .coeurs {
 div.coeur-container .coeur-color {
   z-index: 1;
   font-weight: bold;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA 50%, white 50%);
+  background: -webkit-linear-gradient(#9356dc, #ff79da 50%, white 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   height: 48px;
@@ -96,7 +96,7 @@ div.coeur-container .coeur-color {
 div.coeur-container .coeur-menus {
   z-index: 1;
   font-weight: bold;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA 50%, #f4f4f4 50%);
+  background: -webkit-linear-gradient(#9356dc, #ff79da 50%, #f4f4f4 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   height: 48px;
@@ -292,8 +292,8 @@ header.accueil {
   font-weight: 300;
   border-bottom-width: 3px;
   border-bottom-style: solid;
-  -o-border-image: linear-gradient(90deg, #99E2D0 40px, transparent 40px) 1;
-     border-image: linear-gradient(90deg, #99E2D0 40px, transparent 40px) 1;
+  -o-border-image: linear-gradient(90deg, #99e2d0 40px, transparent 40px) 1;
+     border-image: linear-gradient(90deg, #99e2d0 40px, transparent 40px) 1;
 }
 
 .block-plat h2:first-child {
@@ -389,7 +389,7 @@ header.accueil {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   border-top-right-radius: 20px;
@@ -553,27 +553,27 @@ a:hover .menu-check-ligne i {
 #loader div i.fa-bowl-food {
   -webkit-animation-name: fa-bowl-food;
           animation-name: fa-bowl-food;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #FF79DA), to(#9356DC));
-  background-image: linear-gradient(to bottom, #FF79DA -30%, #9356DC 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #ff79da), to(#9356dc));
+  background-image: linear-gradient(to bottom, #ff79da -30%, #9356dc 100%);
 }
 
 #loader div i.fa-burger {
   -webkit-animation-name: fa-burger;
           animation-name: fa-burger;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #99E2D0), to(#FF79DA));
-  background-image: linear-gradient(to bottom, #99E2D0 -30%, #FF79DA 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #99e2d0), to(#ff79da));
+  background-image: linear-gradient(to bottom, #99e2d0 -30%, #ff79da 100%);
 }
 
 #loader div i.fa-carrot {
   -webkit-animation-name: fa-carrot;
           animation-name: fa-carrot;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #9356DC), to(#99E2D0));
-  background-image: linear-gradient(to bottom, #9356DC -30%, #99E2D0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-30%, #9356dc), to(#99e2d0));
+  background-image: linear-gradient(to bottom, #9356dc -30%, #99e2d0 100%);
 }
 
 #loader span {
   font-size: 18px;
-  color: #9356DC;
+  color: #9356dc;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
@@ -620,25 +620,25 @@ a:hover .menu-check-ligne i {
 
 @-webkit-keyframes loading-text {
   16% {
-    color: #9356DC;
+    color: #9356dc;
   }
   50% {
-    color: #FF79DA;
+    color: #ff79da;
   }
   83% {
-    color: #99E2D0;
+    color: #99e2d0;
   }
 }
 
 @keyframes loading-text {
   16% {
-    color: #9356DC;
+    color: #9356dc;
   }
   50% {
-    color: #FF79DA;
+    color: #ff79da;
   }
   83% {
-    color: #99E2D0;
+    color: #99e2d0;
   }
 }
 
@@ -869,7 +869,7 @@ a:hover .menu-check-ligne i {
   border-radius: 70px;
   width: 25px;
   height: 25px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
@@ -897,7 +897,7 @@ a:hover .menu-check-ligne i {
 }
 
 .block-fonctionnement ul li a:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 @media screen and (min-width: 768px) {

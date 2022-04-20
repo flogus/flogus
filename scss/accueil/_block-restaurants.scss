@@ -1,58 +1,58 @@
 .block-restaurants {
-    background-color: $light-grey;
-    ul {
-        li {
-            @include block-shadow-and-border;
-            padding: 0;
-            background-size: cover;
-            a {
-                height: 300px;
-                display: flex;
-                flex-direction: column;
-                align-items: stretch;
-                div {
-                    &.empty {
-                        flex-grow: 1;
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: flex-start;
-                    }
-                    &.information {
-                        flex: 0 1 70px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        background-color: #ffffff;
-                        padding: 0 20px;
-                        border-bottom-left-radius: 20px;
-                        border-bottom-right-radius: 20px;
-                        div {
-                            display: flex;
-                            flex-direction: column;
-                            flex-grow: 0;
-                            span {
-                                &:first-child {
-                                    font-weight: 700;
-                                }
-                            }
-                        }
-                    }
+  background-color: $light-grey;
+  ul {
+    li {
+      @include block-shadow-and-border;
+      padding: 0;
+      background-size: cover;
+      a {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        div {
+          &.empty {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+          }
+          &.information {
+            flex: 0 1 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 0 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            div {
+              display: flex;
+              flex-direction: column;
+              flex-grow: 0;
+              span {
+                &:first-child {
+                  font-weight: 700;
                 }
+              }
             }
+          }
         }
+      }
     }
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .block-restaurants {
-        ul {
-            flex-direction: row;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            li {
-                flex: 0 1 45%;
-            }
-        }
+  .block-restaurants {
+    ul {
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      li {
+        flex: 0 1 45%;
+      }
     }
+  }
 }

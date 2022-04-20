@@ -1,18 +1,18 @@
 .block-reserver {
-    background-color: $light-grey;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    h1 {
-        font-size: 24px;
-        font-weight: 700;
-        margin: 40px 40px 10px 40px;
-    }
-    h2 {
-        font-size: 18px;
-        font-weight: 300;
-        margin: 10px 40px 30px 40px;
-    }
+  background-color: $light-grey;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 40px 40px 10px 40px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px 40px 30px 40px;
+  }
 }
