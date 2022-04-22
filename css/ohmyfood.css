@@ -506,7 +506,7 @@ a:hover .menu-check-ligne i {
           flex-direction: column;
   top: 0;
   opacity: 0;
-  height: 100vh;
+  height: 0;
   width: 100vw;
   background-color: rgba(245, 245, 245, 0.95);
   position: fixed;
@@ -861,12 +861,8 @@ a:hover .menu-check-ligne i {
   font-weight: 700;
   font-size: 18px;
   position: relative;
-  -webkit-transition-property: background-color, -webkit-box-shadow;
-  transition-property: background-color, -webkit-box-shadow;
-  transition-property: background-color, box-shadow;
-  transition-property: background-color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 
 .block-fonctionnement ul li a span {
