@@ -24,68 +24,66 @@
         position: relative;
         padding: 0;
         display: flex;
-        div.container {
-          flex: 1 1 auto;
+        justify-content: space-between;
+        .container {
           display: flex;
-          align-items: stretch;
-          justify-content: space-between;
-          flex-direction: row;
-          padding: 13px 25px 13px 10px;
-          flex-wrap: wrap;
-          div {
-            display: flex;
-            flex: 0 1 80%;
-            font-size: 16px;
-            font-weight: 300;
+          flex-direction: column;
+          padding: 10px 15px;
+          width: 100%;
+          div:first-child {
+            font-size: 18px;
+            font-weight: 500;
+            padding-bottom: 5px;
+            white-space: nowrap;
+            max-width: calc(100vw - 130px);
+            text-overflow: ellipsis;
             overflow: hidden;
+          }
+          div:last-child {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
             span {
-              width: 100%;
-              min-width: 0;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
+              &:first-child {
+                white-space: nowrap;
+                max-width: calc(100vw - 170px);
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+              &:last-child {
+                font-weight: 500;
+              }
             }
-            &:first-child {
-              flex: 1 1 100%;
-              font-size: 18px;
-              font-weight: 600;
-              padding-bottom: 5px;
-            }
-            &:last-child {
-              flex: 0 1 13%;
-              justify-content: flex-end;
-              font-weight: 600;
-            }
+          }
+        }
+        .menu-check-ligne {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $tertiary;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          opacity: 0;
+          width: 0;
+          overflow: hidden;
+          transition: all 0.5s ease-in-out;
+          i {
+            color: #ffffff;
+            font-size: 22px;
+          }
+        }
+
+        &:hover .menu-check-ligne {
+          opacity: 1;
+          width: 70px;
+          i {
+            animation: spin 0.25s linear;
+            animation-delay: 0.25s;
           }
         }
       }
     }
-  }
-}
-
-.menu-check-ligne {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $tertiary;
-  transition: all 0.5s ease-in-out;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  opacity: 0;
-  width: 0;
-  overflow: hidden;
-  i {
-    color: #ffffff;
-    font-size: 22px;
-  }
-}
-
-a:hover .menu-check-ligne {
-  opacity: 1;
-  width: 70px;
-  i {
-    animation: spin 0.25s linear;
-    animation-delay: 0.25s;
   }
 }
 

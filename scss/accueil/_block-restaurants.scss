@@ -32,7 +32,12 @@
               flex-grow: 0;
               span {
                 &:first-child {
-                  font-weight: 700;
+                  font-weight: 500;
+                  font-size: 18px;
+                  padding-bottom: 2px;
+                }
+                &:last-child {
+                  padding-top: 2px;
                 }
               }
             }
